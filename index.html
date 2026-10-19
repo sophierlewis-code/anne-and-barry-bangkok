@@ -1,15 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Bangkok with Sophie & Jick</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap">
 <style>
-/* Layout: one calm reading column; week strip up top, a choice panel, then day-by-day where Sun/Mon follow the choices. */
 :root{
   --bg:#F2F6F4; --surface:#FFFFFF; --ink:#12302C; --muted:#536A66; --line:#D5E1DD;
   --river:#1F6B63; --river-soft:#E1EFEB; --gold:#A86A00; --gold-soft:#FBEFD6; --warn:#9A3B12; --warn-soft:#FBE6DC;
@@ -26,7 +21,6 @@
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
 .wrap{max-width:780px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 64px;display:flex;flex-direction:column;gap:44px}
 a{color:var(--river);text-underline-offset:3px;font-weight:700}
-.tl dt{font-weight:800!important}
 a:focus-visible,button:focus-visible,input:focus-visible+label{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
 h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;line-height:1.1}
 h1{font-size:clamp(2.6rem,8vw,3.8rem)}
@@ -37,14 +31,12 @@ p{margin:0}
 .lede{color:var(--muted);max-width:60ch;margin-top:12px}
 header{display:flex;flex-direction:column;gap:6px}
 
-/* chips */
 .chip{display:inline-flex;align-items:center;gap:6px;font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px;white-space:nowrap}
 .chip.fixed{background:var(--river-soft);color:var(--river)}
 .chip.choice{background:var(--gold-soft);color:var(--gold)}
 .chip.free{background:transparent;color:var(--muted);border:1px solid var(--line)}
 .legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:16px;font-size:.92rem;color:var(--muted);align-items:center}
 
-/* week strip */
 .group{display:flex;flex-direction:column;gap:10px}
 .week{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 .wday{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:6px;text-decoration:none;color:inherit;min-width:0}
@@ -53,8 +45,6 @@ header{display:flex;flex-direction:column;gap:6px}
 .wday .what{font-size:.86rem;color:var(--muted);line-height:1.35}
 .wday.is-choice{border-color:var(--gold)}
 
-
-/* choice panel */
 .panel{background:var(--surface);border:2px solid var(--gold);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:26px}
 .q{display:flex;flex-direction:column;gap:10px}
 .q .qt{font-weight:700}
@@ -84,7 +74,6 @@ button.ghost{background:transparent;color:var(--river)}
 .copied{font-size:.88rem;color:var(--muted)}
 textarea.fallback{width:100%;min-height:120px;font:inherit;font-size:.85rem;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:10px}
 
-/* days */
 .day{display:flex;flex-direction:column;gap:16px;scroll-margin-top:16px}
 .dayhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;border-bottom:1px solid var(--line);padding-bottom:10px}
 .dayhead .date{color:var(--muted);font-size:.95rem}
@@ -99,7 +88,6 @@ textarea.fallback{width:100%;min-height:120px;font:inherit;font-size:.85rem;back
 .with{font-size:.9rem;color:var(--muted);font-style:italic}
 .change{font-size:.88rem}
 
-/* evening reference */
 .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 @media (max-width:640px){.cards{grid-template-columns:1fr}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px;min-width:0}
@@ -120,9 +108,6 @@ ul.links{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;f
 footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:16px}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
-</head>
-<body>
-
 
 <div class="wrap">
 
@@ -144,7 +129,6 @@ footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);paddi
   </nav>
 </div>
 
-<!-- SATURDAY -->
 <span id="fri"></span>
 <section class="day" id="sat">
   <div class="dayhead"><h2>Saturday</h2><span class="date">21 November</span><span class="chip fixed">Locked in</span></div>
@@ -216,8 +200,6 @@ footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);paddi
     </div>
   </div>
 
-
-
   <div class="actions">
     <button type="button" id="copy">Copy our plan to send Sophie</button>
     <button type="button" class="ghost" id="reset">Back to the suggested plan</button>
@@ -226,7 +208,6 @@ footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);paddi
   <textarea class="fallback" id="fallback" hidden readonly aria-label="Your plan as text"></textarea>
 </section>
 
-<!-- DAY TRIP REFERENCE -->
 <section class="day" id="daytrips">
   <div class="dayhead"><h2>The day trip options</h2></div>
   <div class="cards">
@@ -261,7 +242,6 @@ footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);paddi
   </div>
 </section>
 
-<!-- EVENING REFERENCE -->
 <section class="day" id="evenings">
   <div class="dayhead"><h2>The evening options</h2></div>
   <div class="notes evbox">
@@ -318,21 +298,18 @@ footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);paddi
   </div>
 </section>
 
-<!-- SUNDAY (built from choices) -->
 <section class="day" id="sun">
   <div class="dayhead"><h2>Sunday</h2><span class="date">22 November</span><span class="chip choice">Your choice</span></div>
   <div id="sun-body"></div>
   <a class="change" href="#choose">Change Sunday's choices</a>
 </section>
 
-<!-- MONDAY (built from choices) -->
 <section class="day" id="mon">
   <div class="dayhead"><h2>Monday</h2><span class="date">23 November</span><span class="chip choice">Your choice</span></div>
   <div id="mon-body"></div>
   <a class="change" href="#choose">Change Monday's choices</a>
 </section>
 
-<!-- TUESDAY -->
 <section class="day" id="tue">
   <div class="dayhead"><h2>Tuesday</h2><span class="date">24 November</span><span class="chip free">Going home</span></div>
   <dl class="tl">
@@ -342,7 +319,6 @@ footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);paddi
     <dt>20:00</dt><dd>Flight home</dd>
   </dl>
 </section>
-
 
 <footer>Everything here is flexible. If a day feels like too much once you're here, we can drop something on the day.</footer>
 </div>
@@ -368,7 +344,7 @@ footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);paddi
   if(state.monDay==="market") state.monDay = DEFAULTS.monDay;
 
   function el(id){return document.getElementById(id);}
-  function link(href, text){return '<a href="'+href+'" target="_blank" rel="noopener">'+text+'</a>';}
+  function link(href, text){return '<a href="'+href+'" target="_blank" rel="noopener">'+text+'</a>'};
 
   ["sun","mon"].forEach(function(d){
     var html="";
@@ -420,7 +396,7 @@ footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);paddi
   }
 
   function tl(rows){
-    return '<dl class="tl">'+rows.map(function(r){return '<dt>'+r[0]+'</dt><dd>'+r[1]+'</dd>';}).join("")+'</dl>';
+    return '<dl class="tl">'+rows.map(function(r){return '<dt>'+r[0]+'</dt><dd>'+r[1]+'</dd>';}).join("")+"</dl>";
   }
 
   function renderDay(d){
@@ -561,5 +537,4 @@ footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);paddi
 })();
 </script>
 
-</body>
-</html>
+</body></html>
